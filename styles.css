@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #e0d0e0;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#panel {
+  width: 90%;
+  max-width: 600px;
+  height: 90vh;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#ptop {
+  width: 100%;
+  height: 10%;
+  background-color: #486848;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.elem {
+  text-align: center;
+}
+
+.elem h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.box {
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
+  font-size: 1rem;
+}
+
+#pbtm {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #486848;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bubble:hover {
+  background-color: #324b32;
+}
+
+@media (max-width: 768px) {
+  /*#ptop {
+      flex-direction: column;
+      gap: 10px;
+  }*/
+  .elem h2, .box {
+      font-size: 0.8rem;
+  }
+  .bubble {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+  }
+}
